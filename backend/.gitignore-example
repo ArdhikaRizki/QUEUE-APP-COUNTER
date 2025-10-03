@@ -1,0 +1,54 @@
+# Dependencies
+*/node_modules/
+node_modules/
+
+# Environment variables
+*.env
+!*.env.example
+
+# Logs
+*.log
+logs/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Build outputs
+*/dist/
+*/build/
+*/.next/
+
+# Database
+*.db
+*.sqlite
+
+# Cache
+*/.cache/
+*/tmp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backend specific
+backend/uploads/
+backend/public/uploads/
+
+# Frontend specific
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Prisma
+backend/prisma/migrations/
+!backend/prisma/migrations/.keep
