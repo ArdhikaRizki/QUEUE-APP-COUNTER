@@ -5,7 +5,7 @@ import { cookies } from "next/headers";
 import { env } from "./env.config";
 
 // Debug environment variables
-console.log("API Config Debug:", {
+console.log(✅"API Config Debug:", {
   API_URL: env.APP.API_URL,
   API_KEY: env.APP.API_KEY ? "***SET***" : "***NOT SET***"
 });
@@ -20,7 +20,7 @@ export const satellite = axios.create({
 satellite.interceptors.request.use(
   async function (request) {
     try {
-      console.log("API Request:", {
+      console.log("🌐API Request:", {
         method: request.method?.toUpperCase(),
         baseURL: request.baseURL,
         url: request.url,
